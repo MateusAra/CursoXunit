@@ -1,0 +1,12 @@
+C:\Users\mateu\source\repos\CusoXunit\SRC\CursoXunit.Dominio\bin\Debug\net6.0\CursoXunit.Dominio.deps.json
+C:\Users\mateu\source\repos\CusoXunit\SRC\CursoXunit.Dominio\bin\Debug\net6.0\CursoXunit.Dominio.dll
+C:\Users\mateu\source\repos\CusoXunit\SRC\CursoXunit.Dominio\bin\Debug\net6.0\CursoXunit.Dominio.pdb
+C:\Users\mateu\source\repos\CusoXunit\SRC\CursoXunit.Dominio\obj\Debug\net6.0\CursoXunit.Dominio.csproj.AssemblyReference.cache
+C:\Users\mateu\source\repos\CusoXunit\SRC\CursoXunit.Dominio\obj\Debug\net6.0\CursoXunit.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mateu\source\repos\CusoXunit\SRC\CursoXunit.Dominio\obj\Debug\net6.0\CursoXunit.Dominio.AssemblyInfoInputs.cache
+C:\Users\mateu\source\repos\CusoXunit\SRC\CursoXunit.Dominio\obj\Debug\net6.0\CursoXunit.Dominio.AssemblyInfo.cs
+C:\Users\mateu\source\repos\CusoXunit\SRC\CursoXunit.Dominio\obj\Debug\net6.0\CursoXunit.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\mateu\source\repos\CusoXunit\SRC\CursoXunit.Dominio\obj\Debug\net6.0\CursoXunit.Dominio.dll
+C:\Users\mateu\source\repos\CusoXunit\SRC\CursoXunit.Dominio\obj\Debug\net6.0\refint\CursoXunit.Dominio.dll
+C:\Users\mateu\source\repos\CusoXunit\SRC\CursoXunit.Dominio\obj\Debug\net6.0\CursoXunit.Dominio.pdb
+C:\Users\mateu\source\repos\CusoXunit\SRC\CursoXunit.Dominio\obj\Debug\net6.0\ref\CursoXunit.Dominio.dll

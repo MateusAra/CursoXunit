@@ -1,0 +1,5 @@
+C:\Users\mateu\source\repos\CusoXunit\SRC\CursoXunit.Dominio\obj\Debug\net4.6.1\CursoXunit.Dominio.csproj.AssemblyReference.cache
+C:\Users\mateu\source\repos\CusoXunit\SRC\CursoXunit.Dominio\obj\Debug\net4.6.1\CursoXunit.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mateu\source\repos\CusoXunit\SRC\CursoXunit.Dominio\obj\Debug\net4.6.1\CursoXunit.Dominio.AssemblyInfoInputs.cache
+C:\Users\mateu\source\repos\CusoXunit\SRC\CursoXunit.Dominio\obj\Debug\net4.6.1\CursoXunit.Dominio.AssemblyInfo.cs
+C:\Users\mateu\source\repos\CusoXunit\SRC\CursoXunit.Dominio\obj\Debug\net4.6.1\CursoXunit.Dominio.csproj.CoreCompileInputs.cache
