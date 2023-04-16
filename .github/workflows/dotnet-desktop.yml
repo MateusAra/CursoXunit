@@ -9,23 +9,41 @@ on:
       - master 
 
 jobs:
-  build-and-test:
+  checkout_codigo:
     runs-on: ubuntu-latest
-
+    
     steps:
     - name: Checkout do código
       uses: actions/checkout@v2
-
+      
+  checkout_dotnet:
+    runs-on: ubuntu-latest
+    
+    needs: checkout_codigo
+    steps:
     - name: Setup do .NET
       uses: actions/setup-dotnet@v2.0
       with:
         dotnet-version: 6.0 
-
+        
+  restore_packages:
+    runs-on: ubuntu-latest
+  
+    needs: checkout_dotnet
+    steps:
     - name: Restaurar pacotes
       run: dotnet restore
-
+  build:
+    runs-on: ubuntu-latest
+    
+    needs: restore_packages
+    steps:
     - name: Compilar
       run: dotnet build --configuration Release
-
+  tests:
+    runs-on: ubuntu-latest
+    
+    needs: build
+    steps:
     - name: Executar testes de unidade
       run: dotnet test CursoXunit.DominioTest/Cursos/CursoTests.cs --filter FullyQualifiedName~NaoDeveTerUmNameVazio
