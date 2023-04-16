@@ -3,9 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoXunit.DominioTest", "Test\CursoXunit.DominioTest\CursoXunit.DominioTest.csproj", "{A7029E05-2BBE-47A9-8232-21C82B2063A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoXunit.DominioTest", "Test\CursoXunit.DominioTest\CursoXunit.DominioTest.csproj", "{A7029E05-2BBE-47A9-8232-21C82B2063A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoXunit.Dominio", "SRC\CursoXunit.Dominio\CursoXunit.Dominio.csproj", "{6DF11C0A-817C-48C9-B724-904931A2D5F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoXunit.Dominio", "SRC\CursoXunit.Dominio\CursoXunit.Dominio.csproj", "{6DF11C0A-817C-48C9-B724-904931A2D5F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{FFF852F1-A124-43A8-AE8B-B3D86BFF1480}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{0175338F-3E12-4BFC-9E5A-74AD9CC35897}"
+	ProjectSection(SolutionItems) = preProject
+		CursoTest.yaml = CursoTest.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +31,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0175338F-3E12-4BFC-9E5A-74AD9CC35897} = {FFF852F1-A124-43A8-AE8B-B3D86BFF1480}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {09F76E1F-CB3E-4084-B2DB-CF2C3B7D2095}

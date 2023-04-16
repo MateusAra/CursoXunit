@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AO/Swp1RGuk46a1EuokXP9GFKkBBDEKP2BeJWIpaNeHcL/ta00MPhXcgvRgqcGqdQom3EicNIa1/fDcmB01yhw==",
+  "dgSpecHash": "sYlH2C+9l0HDyLwi7r3Oqis2Ndjc8dSVz9ZzgHY8qeCQTJBETdXlLNIjBNlF0BlyD+nZHjW1nw78ZDutXDDV5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mateu\\source\\repos\\CusoXunit\\Test\\CursoXunit.DominioTest\\CursoXunit.DominioTest.csproj",
+  "projectFilePath": "C:\\Users\\mateu\\Source\\Repos\\MateusAra\\CursoXunit\\Test\\CursoXunit.DominioTest\\CursoXunit.DominioTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mateu\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",

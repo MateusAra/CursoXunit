@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tsS8aDqX04lZHuiwHN5iC4GTD4u2YvZJpT20rZIjWBd3l5H3hQo0KjoJxJ5ri1b8+HYMKvYYgBITmRfHdyOLQA==",
+  "dgSpecHash": "EdLnOJs2eCEWC2u0EPFnEYgr//yjTEDKfETassuMEI5h+bqC2GeRfrirSq5l8einDcjlwm2QW2O5i5qvR1GXAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mateu\\source\\repos\\CusoXunit\\SRC\\CursoXunit.Dominio\\CursoXunit.Dominio.csproj",
+  "projectFilePath": "C:\\Users\\mateu\\Source\\Repos\\MateusAra\\CursoXunit\\SRC\\CursoXunit.Dominio\\CursoXunit.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

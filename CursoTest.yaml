@@ -1,0 +1,31 @@
+name: Testes de Unidade
+
+on:
+  push:
+    branches:
+      - master  
+  pull_request:
+    branches:
+      - master 
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v2
+
+    - name: Setup do .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0  
+
+    - name: Restaurar pacotes
+      run: dotnet restore
+
+    - name: Compilar
+      run: dotnet build --configuration Release
+
+    - name: Executar testes de unidade
+      run: dotnet test CursoXunit.DominioTest/Cursos/CursoTests.cs --filter FullyQualifiedName~NaoDeveTerUmNameVazio
