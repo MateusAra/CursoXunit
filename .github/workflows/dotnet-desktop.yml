@@ -22,9 +22,9 @@ jobs:
     needs: checkout_codigo
     steps:
     - name: Setup do .NET
-      uses: actions/setup-dotnet@v2
+      uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.0 
+        dotnet-version: '6.0.x'
         
   restore_packages:
     runs-on: ubuntu-latest
