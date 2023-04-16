@@ -32,7 +32,7 @@ jobs:
     needs: checkout_dotnet
     steps:
     - name: Restaurar pacotes
-      run: dotnet restore
+      run: dotnet restore CursoXunit.DominioTest/CursoXunit.DominioTest.csproj
   build:
     runs-on: ubuntu-latest
     
