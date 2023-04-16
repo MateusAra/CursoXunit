@@ -22,7 +22,7 @@ jobs:
     needs: checkout_codigo
     steps:
     - name: Setup do .NET
-      uses: actions/setup-dotnet@v2.0
+      uses: actions/setup-dotnet@v2
       with:
         dotnet-version: 6.0 
         
