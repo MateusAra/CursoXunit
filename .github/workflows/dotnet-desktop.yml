@@ -32,7 +32,7 @@ jobs:
     needs: checkout_dotnet
     steps:
     - name: Restaurar pacotes
-      run: dotnet restore CusoXunit
+      run: dotnet restore CursoXunit
   build:
     runs-on: ubuntu-latest
     
