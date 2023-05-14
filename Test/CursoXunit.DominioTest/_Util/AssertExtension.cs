@@ -11,7 +11,9 @@ namespace CursoXunit.DominioTest._Util
         public static void HaveMessage(this ArgumentException exception, string message)
         {
             if (exception.Message == message)
+            {
                 Assert.True(true);
+            }
             else
                 Assert.False(true, $"Esperava mensagem '{message}'");
         }

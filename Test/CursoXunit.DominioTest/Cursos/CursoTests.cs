@@ -1,4 +1,5 @@
-﻿using CursoXunit.Dominio.Cursos;
+﻿using Bogus.DataSets;
+using CursoXunit.Dominio.Cursos;
 using CursoXunit.DominioTest._Util;
 using ExpectedObjects;
 using System;
@@ -8,14 +9,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using Xunit.Abstractions;
 
 namespace CursoXunit.DominioTest.Cursos
 {
     public class CursoTests
     {
+        private readonly ITestOutputHelper output;
+
+        public CursoTests(ITestOutputHelper output)
+        {
+            this.output = output;
+        }
+
         [Fact]
         public void DeveCriarCurso()
         {
+            output.WriteLine("Verifica se o objeto curso é criado");
             //ARRANGE
             Curso cursoDTO = new()
             {
@@ -26,7 +36,7 @@ namespace CursoXunit.DominioTest.Cursos
             };
 
             //ACTION
-            Curso curso = new Curso(cursoDTO.Name, cursoDTO.Workload,cursoDTO.Value, cursoDTO.PublicTarget);
+            Curso curso = new Curso(cursoDTO.Name, cursoDTO.Workload, cursoDTO.Value, cursoDTO.PublicTarget);
 
             //ASSERT
             cursoDTO.ToExpectedObject().ShouldEqual(curso);
@@ -37,38 +47,47 @@ namespace CursoXunit.DominioTest.Cursos
         [InlineData(null)]
         public void NaoDeveTerUmNameVazio(string noName)
         {
+            output.WriteLine("Verifica se aceita nome nulo");
             //ARRANGE
             Curso cursoDTO = new()
             {
-                Name = "TDD",
+                Name = noName,
                 Workload = 20,
                 PublicTarget = PublicTarget.Estudante,
                 Value = 12
             };
-
+            output.WriteLine($" Input: '{noName}'");
             //ACTION AND ASSERT
-            Assert.Throws<ArgumentException>(() =>
-            new Curso(noName, cursoDTO.Workload, cursoDTO.Value, cursoDTO.PublicTarget)).HaveMessage("Nome inválido");
-
+            Assert.Throws<ArgumentException>(() => new Curso(
+                                                            cursoDTO.Name,
+                                                            cursoDTO.Workload,
+                                                            cursoDTO.Value,
+                                                            cursoDTO.PublicTarget)
+                                                            ).HaveMessage("Nome inválido");
         }
         [Theory]
         [InlineData(-1)]
         [InlineData(0)]
         public void NaoDeveCursoTerComWorLoadMenorQueUm(double workloadMin)
         {
-            //ARRANGE
+            output.WriteLine("Valida mensagem de erro caso o Workload seja menor que um");
+
             Curso cursoDTO = new()
             {
                 Name = "TDD",
-                Workload = 20,
+                Workload = workloadMin,
                 PublicTarget = PublicTarget.Estudante,
                 Value = 12
             };
 
+            output.WriteLine($" Input = {workloadMin}");
 
-            //ACTION AND ASSERT
-            Assert.Throws<ArgumentException>(() =>
-            new Curso(cursoDTO.Name, workloadMin, cursoDTO.Value, cursoDTO.PublicTarget)).HaveMessage("workload deve ser maior que 1");
+            Assert.Throws<ArgumentException>(() => new Curso(
+                                                            cursoDTO.Name, 
+                                                            cursoDTO.Workload, 
+                                                            cursoDTO.Value, 
+                                                            cursoDTO.PublicTarget)
+                                                            ).HaveMessage("workload deve ser maior que 1");
         }
         [Theory]
         [InlineData(-1)]
