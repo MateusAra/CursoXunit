@@ -10,9 +10,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{FFF852F1-A124-43A8-AE8B-B3D86BFF1480}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{0175338F-3E12-4BFC-9E5A-74AD9CC35897}"
-	ProjectSection(SolutionItems) = preProject
-		CursoTest.yml = CursoTest.yml
-	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoDominio.Web", "CursoDominio.Web\CursoDominio.Web.csproj", "{D39BC290-B776-418E-BBBF-DBF5E601E49C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominio.DB", "Curso.Dominio.DB\Dominio.DB.csproj", "{F6A3EF6D-F1DA-4D82-9EA9-E22A178C4DDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,6 +29,14 @@ Global
 		{6DF11C0A-817C-48C9-B724-904931A2D5F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DF11C0A-817C-48C9-B724-904931A2D5F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DF11C0A-817C-48C9-B724-904931A2D5F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D39BC290-B776-418E-BBBF-DBF5E601E49C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D39BC290-B776-418E-BBBF-DBF5E601E49C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D39BC290-B776-418E-BBBF-DBF5E601E49C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D39BC290-B776-418E-BBBF-DBF5E601E49C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6A3EF6D-F1DA-4D82-9EA9-E22A178C4DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A3EF6D-F1DA-4D82-9EA9-E22A178C4DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A3EF6D-F1DA-4D82-9EA9-E22A178C4DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A3EF6D-F1DA-4D82-9EA9-E22A178C4DDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

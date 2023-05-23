@@ -1,8 +1,13 @@
-﻿using CursoXunit.Dominio.Cursos;
+﻿using CursoXunit.Dominio.Base;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace CursoXunit.DominioTest.Cursos
+namespace CursoXunit.Dominio.Cursos
 {
-    public class Curso
+    public class Curso : Entity
     {
         public Curso()
         {
@@ -14,7 +19,7 @@ namespace CursoXunit.DominioTest.Cursos
                 throw new ArgumentException("Nome inválido");
             if (workload < 1)
                 throw new ArgumentException("workload deve ser maior que 1");
-            if(value < 0)
+            if (value < 0)
                 throw new ArgumentException("value deve ser maior que 0");
 
             this.Name = name;

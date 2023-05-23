@@ -1,11 +1,14 @@
-﻿using CursoXunit.Dominio.Cursos;
+﻿using Bogus;
 using CursoXunit.DominioTest._Util;
+using Microsoft.VisualStudio.TestPlatform.Utilities;
 using Moq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CursoXunit.Dominio.Cursos;
+using Xunit.Abstractions;
 
 namespace CursoXunit.DominioTest.Cursos
 {
@@ -13,6 +16,24 @@ namespace CursoXunit.DominioTest.Cursos
     {
         private readonly CursoDTO _cursoDTO;
         private readonly ArmazenadorDeCurso _armazenadorDeCurso;
+        private readonly Mock<ICursoRepositorio> _cursoRepositorioMock;
+        private readonly ITestOutputHelper _output;
+
+        public ArmazenadorCursoTest(ITestOutputHelper output)
+        {
+            var faker = new Faker();
+            _cursoDTO = new CursoDTO
+            {
+                Name = faker.Random.Words(),
+                Workload = faker.Random.Int(50, 1000),
+                PublicTarget = "Estudante",
+                Value = faker.Random.Int(1000, 2000)
+            };
+
+            this._output = output;
+            _cursoRepositorioMock = new Mock<ICursoRepositorio>();
+            _armazenadorDeCurso = new ArmazenadorDeCurso(_cursoRepositorioMock.Object);
+        }
         [Fact]
         public void DeveAdicionarCurso()
         {
@@ -28,51 +49,11 @@ namespace CursoXunit.DominioTest.Cursos
         [Fact]
         public void NaoDeveInformarPublicoAlvoInvalido()
         {
-            var publicTarget = "Médico";
-            _cursoDTO.PublicTarget = publicTarget;
+            var publicTargetInvalid = "Médico";
+            _cursoDTO.PublicTarget = publicTargetInvalid;
 
-            Assert.Throws<ArgumentException>(() => _armazenadorDeCurso.Armazenar(_cursoDTO)).HaveMessage("Publico Alvo inválido");
-
-        }
-
-    }
-
-    public class CursoDTO
-    {
-        public string? Name { get; set; }
-        public int Workload { get; set; }
-        public string PublicTarget { get; set; }
-        public int Value { get; set; }
-    }
-
-    public interface ICursoRepositorio
-    {
-        void Adicionar(Curso curso);
-        void Atualizar(Curso curso);
-    }
-
-    public class ArmazenadorDeCurso
-    {
-        private ICursoRepositorio _cursoRepositorio;
-
-        public ArmazenadorDeCurso(ICursoRepositorio cursoRepositorio)
-        {
-            _cursoRepositorio = cursoRepositorio;
-        }
-        public void Armazenar(CursoDTO cursoDTO)
-        {
-            Enum.TryParse(typeof(PublicTarget), cursoDTO.PublicTarget, out var publicTarget);
-
-            if (publicTarget == null)
-                throw new ArgumentException("Publico Alvo inválido");
-            var curso = new Curso
-                (
-                cursoDTO.Name,
-                cursoDTO.Workload,
-                cursoDTO.Value,
-                (PublicTarget)publicTarget
-                );
-            _cursoRepositorio.Adicionar(curso);
+            Assert.Throws<ArgumentException>(() => _armazenadorDeCurso.Armazenar(_cursoDTO))
+                .HaveMessage("Publico Alvo inválido");
         }
     }
 }

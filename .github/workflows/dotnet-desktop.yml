@@ -1,9 +1,6 @@
 name: Testes de Unidade
 
-on:
-  push:
-    branches:
-      - master  
+on:  
   pull_request:
     branches:
       - master 

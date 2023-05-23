@@ -43,7 +43,7 @@ namespace CursoXunit.DominioTest.Cursos
         }
 
         [Theory]
-        [InlineData("")]
+        [InlineData("Mateus")]
         [InlineData(null)]
         public void NaoDeveTerUmNameVazio(string noName)
         {
