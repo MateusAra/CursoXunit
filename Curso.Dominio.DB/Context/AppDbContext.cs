@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using CursoXunit.Dominio.Cursos;
 
 namespace Dominio.DB.Context
 {
@@ -19,7 +20,7 @@ namespace Dominio.DB.Context
             }
         }
 
-        public DbSet<CursoXunit.Dominio.Cursos.Curso> Cursos { get; set; }
+        public DbSet<CursoDTO> Cursos { get; set; }
 
         public async Task CommitAsync()
         {

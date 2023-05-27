@@ -5,6 +5,7 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CusoXunit
 build_property.RootNamespace = CusoXunit
@@ -14,3 +15,51 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\mateu\source\repos\MateusAra\CursoXunit
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/mateu/source/repos/MateusAra/CursoXunit/CursoDominio.Web/Views/CursoDTOes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q3Vyc29Eb21pbmlvLldlYlxWaWV3c1xDdXJzb0RUT2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mateu/source/repos/MateusAra/CursoXunit/CursoDominio.Web/Views/CursoDTOes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q3Vyc29Eb21pbmlvLldlYlxWaWV3c1xDdXJzb0RUT2VzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mateu/source/repos/MateusAra/CursoXunit/CursoDominio.Web/Views/CursoDTOes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q3Vyc29Eb21pbmlvLldlYlxWaWV3c1xDdXJzb0RUT2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mateu/source/repos/MateusAra/CursoXunit/CursoDominio.Web/Views/CursoDTOes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q3Vyc29Eb21pbmlvLldlYlxWaWV3c1xDdXJzb0RUT2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mateu/source/repos/MateusAra/CursoXunit/CursoDominio.Web/Views/CursoDTOes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q3Vyc29Eb21pbmlvLldlYlxWaWV3c1xDdXJzb0RUT2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mateu/source/repos/MateusAra/CursoXunit/CursoDominio.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q3Vyc29Eb21pbmlvLldlYlxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mateu/source/repos/MateusAra/CursoXunit/CursoDominio.Web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q3Vyc29Eb21pbmlvLldlYlxWaWV3c1xIb21lXFByaXZhY3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mateu/source/repos/MateusAra/CursoXunit/CursoDominio.Web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q3Vyc29Eb21pbmlvLldlYlxWaWV3c1xTaGFyZWRcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mateu/source/repos/MateusAra/CursoXunit/CursoDominio.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q3Vyc29Eb21pbmlvLldlYlxWaWV3c1xTaGFyZWRcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mateu/source/repos/MateusAra/CursoXunit/CursoDominio.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q3Vyc29Eb21pbmlvLldlYlxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mateu/source/repos/MateusAra/CursoXunit/CursoDominio.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q3Vyc29Eb21pbmlvLldlYlxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mateu/source/repos/MateusAra/CursoXunit/CursoDominio.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q3Vyc29Eb21pbmlvLldlYlxWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-3enk57nkxo

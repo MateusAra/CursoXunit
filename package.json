@@ -1,0 +1,15 @@
+{
+  "name": "cursoxunit",
+  "version": "1.0.0",
+  "description": "- Implementado suites de testes com o framework xUnit em C# e .NET \r - Usando TDD no desenvolvimento de testes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.13.0"
+  }
+}

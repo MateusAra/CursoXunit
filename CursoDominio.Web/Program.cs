@@ -1,13 +1,22 @@
 using Dominio.DB.Context;
 using Microsoft.EntityFrameworkCore;
-using System;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    IConfigurationSection connectionStringsSection = (AppSettingsSection)Configuration.GetSection('ConnectionStrings');
+    string connectionString = connectionStringsSection["DefaultConnection"];
+    options.UseSqlServer(connectionString);
+});
+
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
